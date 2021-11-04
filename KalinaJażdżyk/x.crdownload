@@ -237,7 +237,7 @@ plt.legend(labels=["loyal","disloyal"])
 plt.title("Lojalność klientów a wybierany dystans lotu:")
 #lojalni klienci częściej wybierają te linie lotnicze na dłuższe podróże
 
-"""Powyższy wyres pokazuje zalezność miedzy lojalnością klienta (lojalny- nielojalny) a dystansem podróży. Widać wyraźną zalezność lojalni klienci częściej skłonni są wybierać dłuższe podróże, kiedy nielojalni prawie w ogóle nie skłaniają się do kupna długich lotów.
+"""Powyższy wyres pokazuje zależność miedzy lojalnością klienta (lojalny- nielojalny) a dystansem podróży. Widać wyraźną zależność lojalni klienci częściej skłonni są wybierać dłuższe podróże, kiedy nielojalni prawie w ogóle nie skłaniają się do kupna długich lotów.
 
 Czy występuje zalezność między poziomem satysfakcji a klasą biletu?
 """
@@ -245,7 +245,7 @@ Czy występuje zalezność między poziomem satysfakcji a klasą biletu?
 sns.countplot(x='Class',hue="satisfaction",data=data,color="red")
 plt.legend(labels=labels)
 
-"""Odpowiadając na pytanie wydaje się, że istnieją zalezności, ale w związku z tym, że próby są różno liczne cieżko je zauważyć (głównie klasa ekonomiczna plus). Na pewno w business class klienci częściej są zadowoleni natomiast w klasie ekonomicznej proporce są odwrócone. """
+"""Odpowiadając na pytanie wydaje się, że istnieją zalezności, ale w związku z tym, że próby są różno liczne cieżko je zauważyć (głównie klasa ekonomiczna plus). Na pewno w business class klienci częściej są zadowoleni natomiast w klasie ekonomicznej proporcje są odwrócone. """
 
 def radar_plot(data,columns_names=data.describe().T.index):
   import plotly.express as px
@@ -333,7 +333,7 @@ fig.update_layout(polar=dict(
 
 fig.show()
 
-"""Powyższy wyres przedastawia zależności miedzy oceną satysfakcji, a przynalżnością do danej grupy wiekowej. Grupy zostały wybrane co 10 lat. 
+"""Powyższy wykres przedstawia zależności między oceną satysfakcji, a przynależnością do danej grupy wiekowej. Grupy zostały wybrane co 10 lat. 
 
 Wnioski z wykresu: 
 
